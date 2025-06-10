@@ -37,15 +37,14 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { 
+      use: {
         ...devices['Desktop Chrome'],
         // to maximize all windows /viewport for all spec files
-        viewport:{width:1268,height:756},
-        screenshot:"only-on-failure",
-        video:"retain-on-failure",
-        trace:"retry-with-trace"
-       },
-      
+        viewport: { width: 1268, height: 756 },
+        screenshot: 'only-on-failure',
+        video: 'retain-on-failure',
+        trace: 'retry-with-trace',
+      },
     },
 
     /* {
